@@ -1,0 +1,68 @@
+{
+  "projectType": [
+    "sap.watt.uitools.ide.fiori",
+    "com.watt.common.builder.sapui5clientbuild",
+    "com.sap.webide.hybrid.cordova"
+  ],
+  "build": {
+    "targetFolder": "dist",
+    "sourceFolder": "webapp",
+    "excludedFolders": [
+      "test"
+    ],
+    "excludedFiles": [
+      "test.html"
+    ],
+    "buildRequired": true
+  },
+  "generation": [
+    {
+      "templateId": "ui5template.2masterdetailcrud",
+      "templateVersion": "1.40.12",
+      "dateTimeStamp": "Sun, 30 Apr 2017 02:06:46 GMT"
+    }
+  ],
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "mockpreview": {
+    "mockUri": "/ES4/sap/opu/odata/IWBEP/GWSAMPLE_BASIC",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "basevalidator": {
+    "services": {
+      "xml": "fioriXmlAnalysis",
+      "js": "fioriJsValidator"
+    }
+  },
+  "codeCheckingTriggers": {
+    "notifyBeforePush": true,
+    "notifyBeforePushLevel": "Error",
+    "blockPush": false,
+    "blockPushLevel": "Error"
+  },
+  "hybrid": {
+    "backendDestination": "ES4",
+    "hatVersion": "1.26.1",
+    "appNamespace": "com.sap.demo.customer.order.maintenance",
+    "oDataConfigs": [
+      {
+        "hybridOdata": {
+          "name": "mainService",
+          "serviceUrl": ""
+        },
+        "originOdata": {
+          "name": "mainService",
+          "serviceUrl": "/ES4/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/"
+        }
+      }
+    ]
+  }
+}
